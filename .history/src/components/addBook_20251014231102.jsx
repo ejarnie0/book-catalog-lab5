@@ -39,12 +39,15 @@ const AddBook = ({ onAddBook, onClose }) => {
                 <form className="add-book-form" onSubmit={handleSubmit}>
                     <h2>Add a New Book</h2>
                     <input type="text" placeholder="Title" required onChange={handleChange} />
-                    <input type="text" placeholder="Author" required onChange={handleChange} />
+                    <input type="text" placeholder="Subtitle" onChange={handleChange} />
+                    <input type="text" placeholder="Authors" required onChange={handleChange} />
                     <input type="text" placeholder="Publisher" required onChange={handleChange} />
                     <input type="text" placeholder="Publication Year" required onChange={handleChange} />
                     <input type="text" placeholder="Language" required onChange={handleChange} />
                     <input type="number" placeholder="Pages" required onChange={handleChange} />
-                    <input type="url" placeholder="URL (Book Cover)" onChange={handleChange} />
+                    <input type="text" placeholder="Price" onChange={handleChange} />
+                    <input type="url" placeholder="Image URL" onChange={handleChange} />
+                    <input type="url" placeholder="Book URL" onChange={handleChange} />
                     <button type="submit">Add Book</button>
                 </form>
             </div>

@@ -1,4 +1,5 @@
 import { useState } from 'react'
+import booksData from './data/books.json'
 import './App.css'
 import AddBook from './components/addBook'
 
@@ -18,7 +19,7 @@ function Book({ title, price, subtitle, image, url, onRemove, onClick, selected 
     }
 
 function App() {
-    const [books, setBooks] = useState([]);
+    const [books, setBooks] = useState(booksData);
     const [showAddBook, setShowAddBook] = useState(false);
     
     const handleSelectBook = (isbn13) => {
@@ -62,7 +63,7 @@ function App() {
                     </div>
                     <div className="action-buttons">
                         <button className="edit-button">Edit</button>
-                        <button className="delete-button" onClick={handleDeleteSelected}>Delete</button>
+                        <button className="delete-button">Delete</button>
                     </div>
                 </div>
                 {showAddBook && (
