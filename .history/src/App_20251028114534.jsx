@@ -2,7 +2,7 @@ import { useEffect, useMemo, useState } from "react";
 import BookForm from "./components/BookForm.jsx";
 import FilterBar from "./components/FilterBar.jsx";
 import BookGrid from "./components/BookGrid.jsx";
-import Modal from "./components/modal.jsx";
+import Modal from "./components/Modal.jsx";
 
 const LS_KEY = "books_v1";
 
